@@ -27,9 +27,11 @@
 
         <label>
             Converter <b>para</b>
-            <select>
-                <option>US$ Dólar Americano</option>
-                <option>€ Euro</option>
+            <select class="currency-select">
+                <option value="dolar">US$ Dólar Americano</option>
+                <option value="euro">€ Euro</option>
+                <option value="libra">£ Libra</option>
+                <option value="peso-argentino">$ Peso Argentino</option>
             </select>
         </label>
 
@@ -51,13 +53,12 @@
             <img class="arrow" src="./assets/arrow.png" alt="arrow">
 
             <div class="currency-box">
-                <img src="./assets/dolar.png" alt="moeda-dolar">
-                <p class="currency"> Dólar Americano</p>
+                <img class="currency-flag" src="./assets/dolar.png" alt="moeda-dolar">
+                <p class="currency" id="currency-name"> Dólar Americano</p>
                 <p class="currency-value"> US$ 0,00</p>
             </div>
         </section>
     </main>
-
 </body>
 <script src="./scripts.js"></script>
 </html>
